@@ -1,10 +1,29 @@
 $white:      #ffffff; 
+$accent:     #00d276;
+$accent-100: #65ffbc;
+$text:       #202020;
 
 
-// %inter-400 {
-//     font-family: "Inter-Regular", sans-serif;
-//     font-weight: 400;
-// }
+
+%rufina-400 {
+    font-family: "Rufina-Regular", sans-serif;
+    font-weight: 400;
+}
+
+%rufina-700 {
+    font-family: "Rufina-Bold", sans-serif;
+    font-weight: 700;
+}
+
+%oxygen-400 {
+    font-family: "Oxigen-Regular", sans-serif;
+    font-weight: 400;
+}
+
+%oxygen-700 {
+    font-family: "Oxygen-Bold", sans-serif;
+    font-weight: 700;
+}
 
 %df {
     display: flex;

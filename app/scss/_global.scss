@@ -8,10 +8,10 @@ body {
 
 body {
    background-color: $white;
-   color: $black; 
-   @extend %inter-400;
+   color: $text; 
+   @extend %oxygen-400;
    font-size: 16px;
-   line-height: 2;
+   line-height: 1.6;
 }
 
 .wrapper {
@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-    // max-width: 1320px;
+    max-width: 1230px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -47,11 +47,15 @@ body {
     border: 0;
 }
 
-.btn-burger {
-    display: none;
-    @include lg {
-        display: block;
-    }
-}
+.logo {
+    max-width: 251px;
+    width: 100%;
 
+
+    &__img {
+        object-fit: contain;
+    }
+    
+
+}
 

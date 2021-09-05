@@ -13,9 +13,10 @@
 
 $screen-sm-max: 479.90px;
 $screen-md-max: 767.90px;
-$screen-lg-max: 991.90px;
+// $screen-lg-max: 991.90px;
+$screen-lg-max: 879.90px;
 $screen-xl-max: 1199.90px;
-$screen-xxl-max: 1289.90px;
+// $screen-xxl-max: 1289.90px;
 
 
 @mixin sm {
@@ -42,8 +43,8 @@ $screen-xxl-max: 1289.90px;
     }
 }
 
-@mixin xxl {
-    @media only screen and (max-width: #{$screen-xxl-max}) {
-        @content;
-    }
-}
+// @mixin xxl {
+//     @media only screen and (max-width: #{$screen-xxl-max}) {
+//         @content;
+//     }
+// }
