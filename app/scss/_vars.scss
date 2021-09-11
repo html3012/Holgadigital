@@ -1,27 +1,30 @@
 $white:      #ffffff; 
 $accent:     #00d276;
 $accent-100: #65ffbc;
+$active:     #00a15b;
 $text:       #202020;
+$text-500:   #8d8d8d;
+$text-300:   #c0c0c0;
 
 
 
 %rufina-400 {
-    font-family: "Rufina-Regular", sans-serif;
+    font-family: "Rufina", sans-serif;
     font-weight: 400;
 }
 
 %rufina-700 {
-    font-family: "Rufina-Bold", sans-serif;
+    font-family: "Rufina", sans-serif;
     font-weight: 700;
 }
 
 %oxygen-400 {
-    font-family: "Oxigen-Regular", sans-serif;
+    font-family: "Oxygen", sans-serif;
     font-weight: 400;
 }
 
 %oxygen-700 {
-    font-family: "Oxygen-Bold", sans-serif;
+    font-family: "Oxygen", sans-serif;
     font-weight: 700;
 }
 

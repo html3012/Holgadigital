@@ -1,55 +1,111 @@
 .hero {
     padding-top: 114px;
-    background-image: url('../../../img/bg-up.svg');
+    background-image: url("../../../img/bg-up.svg");
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
-    height: 100vh;
+    background-position: right top; 
+    height: calc(100vh - 120px);
+    max-height: 1000px;
+    margin-bottom: 120px;
+   
+
+    @include xxl {
+        background-position: 25% top;
+    }
+
+    @include lg {
+       background-image: url('../../../img/bg-mobile-top.svg'); 
+       background-position: right top ;
+       background-size: contain;
+    }
 
     &__content {
-        height: calc(100vh - 114px);
+        height: calc(100vh - 234px);
+        max-height: 730px;
         background-repeat: no-repeat;
-        background-position: 350px -170px;
-      background-size: contain;
+        background-position: 358px -80px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         justify-content: center;
-    }
 
-    &__phrase {
-        font-size: 22px;
-        line-height: 1.3;
-        opacity: 0.5;
+        @include md {
+           background-size: contain;
+           background-position: 250px 120px;
+        }
+
+        @include sm {
+            height: calc(100vh - 130px);
+            background-size: contain;
+            background-position: 173px 78px;
+         }
     }
 
     &__title {
         max-width: 513px;
         width: 100%;
-        @extend %rufina-700;
-        font-size: 82px;
-        line-height: 1.2;
+        margin-bottom: 10px;
+
+        @include md {
+            font-size: 60px;
+        }
+
+        @include sm {
+            font-size: 32px;
+        }
     }
 
     &__text {
         max-width: 513px;
         width: 100%;
         margin-bottom: 65px;
-        opacity: 0.5;
+        color: $text-500;
+
+        @include md {
+            max-width: 400px;
+            width: 100%;
+            margin-bottom: 28px;
+        }
+
+        @include sm {
+            max-width: 212px;
+            width: 100%;
+        }
     }
 
     &__form {
+        max-width: 585px;
+        width: 100%;
         display: flex;
+        margin-bottom: 40px;
+        @include sm {
+            display: block;
+        }
     }
 
     &__input {
-        padding: 28px 254px 28px 54px;
+        max-width: 405px;
+        width: 100%;
+        padding: 27px 27px 27px 54px;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-        border-radius: 12px 0 0 12px ;
-        opacity: 0.3;
-        background-image: url('../../../img/icons/email.svg');
+        border-radius: 12px 0 0 12px;
+        background-image: url("../../../img/icons/email.svg");
         background-repeat: no-repeat;
         background-position: 15px center;
+        
+        &::placeholder {
+            color: $text-300;
+        }
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.5);
+        }
+
+        @include sm {
+            max-width: 97%;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+
     }
 
     &__btn {
@@ -57,6 +113,25 @@
         color: $white;
         box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.25);
         border-radius: 0px 12px 12px 0px;
-        padding: 28px 64px;
+        padding: 27px 64px;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.5);
+        }
+
+        &:active {
+            background: $active;
+            box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.4);
+        }
+
+        @include sm {
+            width: 97%;
+            border-radius: 12px; 
+        }
+    }
+
+    .container {
+        padding: 0 0 0 15px;
     }
 }

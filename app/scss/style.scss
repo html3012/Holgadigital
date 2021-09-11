@@ -4,8 +4,12 @@
 @import 'mixin';
 @import 'global';
 
+@import 'components/bem-block/card';
 @import 'components/bem-block/cart';
 @import 'components/home/hero';
+@import 'components/home/meet';
+@import 'components/home/review';
+@import 'components/home/review-video';
 @import 'components/header';
 @import 'components/footer';
 

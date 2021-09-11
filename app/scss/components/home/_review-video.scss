@@ -1,0 +1,57 @@
+.review-video {
+    text-align: center;
+    margin-bottom: 120px;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        text-align: left;
+        margin: 0 15px;
+    }
+
+    &__link {
+        position: relative;
+        max-width: 278px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+        border-radius: 12px;
+
+        &::before {
+            position: absolute;
+            content: url("../../../img/icons/play.svg");
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background-color: $white;
+            z-index: 2;
+            padding: 23px 23px 23px 31px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 12px;
+            transition: background-color 0.2s ease-in;
+        }
+        &:hover::after {
+            background-color: rgba(0, 210, 118, 0.5);
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+}
