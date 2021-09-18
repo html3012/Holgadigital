@@ -77,3 +77,20 @@ body {
         font-size: 16px;
     }
 }
+
+.btn {
+    @extend %oxygen-700;
+    background-color: $accent;
+    color: $white;
+    box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.25);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 12px;
+    &:hover {
+        box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.5);
+    }
+
+    &:active {
+        background: $active;
+        box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.4);
+    }
+}

@@ -17,9 +17,8 @@ $(function () {
    
    $('.review__slider').slick({
       infinite: true,
-      speed: 300,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
    });
 
    $('.review-video__items').slick({
@@ -29,7 +28,37 @@ $(function () {
       arrows: false,
       // autoplay: true,
       autoplaySpeed: 2000,
+      responsive: [
+         {
+           breakpoint: 1199.90,
+           settings: {
+             slidesToShow: 3,
+           }
+         },
+         {
+           breakpoint: 879.90,
+           settings: {
+             slidesToShow: 2,
+             slidesToScroll: 2
+           }
+         },
+         {
+           breakpoint: 599.90,
+           settings: {
+             slidesToShow: 1,
+             slidesToScroll: 1
+           }
+         }
+       ]
    });
+
+   Fancybox.bind("[data-fancybox]", {
+      Toolbar: {
+         display: [       
+           { id: "close", position: "right" },
+         ],
+       },
+    });
 
 
 });

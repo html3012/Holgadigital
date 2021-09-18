@@ -76,7 +76,6 @@
         max-width: 585px;
         width: 100%;
         display: flex;
-        margin-bottom: 40px;
         @include sm {
             display: block;
         }
@@ -109,22 +108,9 @@
     }
 
     &__btn {
-        background-color: $accent;
-        color: $white;
-        box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.25);
-        border-radius: 0px 12px 12px 0px;
         padding: 27px 64px;
-        transition: opacity 0.3s ease-in-out;
-
-        &:hover {
-            box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.5);
-        }
-
-        &:active {
-            background: $active;
-            box-shadow: 10px 10px 30px rgba(0, 210, 118, 0.4);
-        }
-
+        border-radius: 0px 12px 12px 0px;
+      
         @include sm {
             width: 97%;
             border-radius: 12px; 

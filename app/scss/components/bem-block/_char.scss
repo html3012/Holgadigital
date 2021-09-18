@@ -1,0 +1,30 @@
+.char {
+    margin-bottom: 26px;
+    &__item {
+       line-height: 2.1;
+        display: flex;
+        &:not(:last-child) {
+            border-bottom: 1px solid $accent-100;
+        }
+
+        @include lg {
+            justify-content: space-between;
+        }
+    }
+
+    &__name {
+       margin-right: 54px;
+       max-width: 153px;
+       width: 100%;
+
+       @include sm {
+        margin-right: 35px;
+    }
+    }
+
+   
+
+    &__name-value {
+        color: $text-500;
+    }
+}
